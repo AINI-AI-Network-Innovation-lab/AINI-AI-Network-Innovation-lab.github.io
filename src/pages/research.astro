@@ -1,0 +1,50 @@
+---
+import { getCollection } from "astro:content";
+import ProjectCard from "../components/ProjectCard.astro";
+import ResearchCard from "../components/ResearchCard.astro";
+import SectionHeader from "../components/SectionHeader.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { byOrder } from "../lib/content";
+
+const research = byOrder(await getCollection("research"));
+const projects = byOrder(await getCollection("projects"));
+---
+<BaseLayout title="Research" description="Research areas and featured projects from AINI Lab.">
+  <section class="page-hero">
+    <div class="container narrow">
+      <p class="eyebrow">Research</p>
+      <h1>Academic questions with systems-level consequences.</h1>
+      <p class="section-copy">
+        Our research spans intelligent networking, edge AI, and practical infrastructure that helps advanced models operate in realistic environments.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <SectionHeader title="Research Areas" description="Core directions that define the lab's long-term agenda." />
+      <div class="card-grid three-up">
+        {research.map((entry) => (
+          <ResearchCard title={entry.data.title} summary={entry.data.summary} tags={entry.data.tags} />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <SectionHeader title="Featured Projects" description="Representative efforts translating research questions into executable systems work." />
+      <div class="card-grid three-up">
+        {projects.map((entry) => (
+          <ProjectCard
+            title={entry.data.title}
+            summary={entry.data.summary}
+            tags={entry.data.tags}
+            links={entry.data.links}
+          />
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+

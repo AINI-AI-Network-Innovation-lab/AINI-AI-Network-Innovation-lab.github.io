@@ -1,0 +1,28 @@
+---
+import PublicationList from "../components/PublicationList.astro";
+import SectionHeader from "../components/SectionHeader.astro";
+import publications from "../data/publications.json";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import type { Publication } from "../types";
+
+const typedPublications = publications as Publication[];
+const sorted = [...typedPublications].sort((a, b) => b.year - a.year || a.title.localeCompare(b.title));
+---
+<BaseLayout title="Publications" description="Publications and scholarly outputs from AINI Lab.">
+  <section class="page-hero">
+    <div class="container narrow">
+      <p class="eyebrow">Publications</p>
+      <h1>Scholarly outputs across systems, networking, and applied AI.</h1>
+      <p class="section-copy">
+        Publications are grouped by year and include lightweight metadata so visitors can quickly see topics, venues, and open resources.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <SectionHeader title="Publication Archive" description="The current entries are fictional sample content for the initial site scaffold and can be replaced with the lab's real bibliography." />
+      <PublicationList publications={sorted} grouped />
+    </div>
+  </section>
+</BaseLayout>

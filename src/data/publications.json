@@ -1,0 +1,54 @@
+[
+  {
+    "title": "Adaptive Federated Scheduling for Unreliable Edge Networks",
+    "authors": ["Linh Tran", "Minh Nguyen", "Sara Pham"],
+    "venue": "IEEE INFOCOM Workshop",
+    "year": 2026,
+    "topicTags": ["federated learning", "edge systems"],
+    "paperUrl": "https://github.com/AINI-AI-Network-Innovation-lab",
+    "featured": true
+  },
+  {
+    "title": "Trustworthy Network Telemetry for AI-Native Infrastructure",
+    "authors": ["Linh Tran", "Anh Le"],
+    "venue": "ACM CoNEXT",
+    "year": 2025,
+    "topicTags": ["telemetry", "network intelligence"],
+    "paperUrl": "https://github.com/AINI-AI-Network-Innovation-lab",
+    "codeUrl": "https://github.com/AINI-AI-Network-Innovation-lab/project-telemetry",
+    "featured": true
+  },
+  {
+    "title": "Resource-Aware Multimodal Inference at the Network Edge",
+    "authors": ["Sara Pham", "Nora Ho", "Linh Tran"],
+    "venue": "NeurIPS Workshop",
+    "year": 2025,
+    "topicTags": ["multimodal AI", "edge inference"],
+    "paperUrl": "https://github.com/AINI-AI-Network-Innovation-lab",
+    "featured": true
+  },
+  {
+    "title": "OpenBench-NI: A Benchmark Suite for Networked Intelligence",
+    "authors": ["Quoc Bui", "Minh Nguyen", "Linh Tran"],
+    "venue": "Journal of Systems Research",
+    "year": 2024,
+    "topicTags": ["benchmarking", "systems"],
+    "paperUrl": "https://github.com/AINI-AI-Network-Innovation-lab"
+  },
+  {
+    "title": "Efficient Coordination Policies for Collaborative Edge Agents",
+    "authors": ["Anh Le", "Linh Tran"],
+    "venue": "AAAI Symposium",
+    "year": 2024,
+    "topicTags": ["multi-agent systems", "coordination"],
+    "paperUrl": "https://github.com/AINI-AI-Network-Innovation-lab"
+  },
+  {
+    "title": "Benchmarking Failure Recovery in AI-Native Network Control Loops",
+    "authors": ["Bao Vu", "Minh Nguyen", "Linh Tran"],
+    "venue": "IEEE/IFIP NOMS",
+    "year": 2023,
+    "topicTags": ["network control", "benchmarking", "reliability"],
+    "paperUrl": "https://github.com/AINI-AI-Network-Innovation-lab"
+  }
+]

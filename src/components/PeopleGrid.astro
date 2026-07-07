@@ -1,0 +1,26 @@
+---
+import type { Person } from "../types";
+
+interface Props {
+  people: Person[];
+  compact?: boolean;
+}
+
+const { people, compact = false } = Astro.props;
+---
+<div class="people-grid">
+  {people.map((person) => (
+    <article class="content-card person-card">
+      <p class="eyebrow">{person.group}</p>
+      <h3>{person.name}</h3>
+      <p class="person-role">{person.role}</p>
+      {person.affiliation && <p>{person.affiliation}</p>}
+      {!compact && person.bio && <p>{person.bio}</p>}
+      {person.links && person.links.length > 0 && (
+        <div class="link-row">
+          {person.links.map((link) => <a href={link.href}>{link.label}</a>)}
+        </div>
+      )}
+    </article>
+  ))}
+</div>

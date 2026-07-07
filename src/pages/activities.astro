@@ -1,0 +1,30 @@
+---
+import { getCollection } from "astro:content";
+import NewsList from "../components/NewsList.astro";
+import SectionHeader from "../components/SectionHeader.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { byDate } from "../lib/content";
+
+const activities = byDate(await getCollection("news"));
+---
+<BaseLayout title="Activities" description="Seminars, announcements, publications, and opportunities from AINI Lab.">
+  <section class="page-hero">
+    <div class="container narrow">
+      <p class="eyebrow">Activities</p>
+      <h1>Lab activities, announcements, and community updates.</h1>
+      <p class="section-copy">
+        A running archive of seminars, publications, opportunities, and public-facing milestones from AINI Lab.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <SectionHeader
+        title="Recent activities"
+        description="This page reuses the lab's update collection so new announcements can appear on both the homepage and the full archive."
+      />
+      <NewsList entries={activities} />
+    </div>
+  </section>
+</BaseLayout>

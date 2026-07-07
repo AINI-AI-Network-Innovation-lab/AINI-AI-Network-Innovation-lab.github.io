@@ -1,0 +1,19 @@
+---
+interface Props {
+  title: string;
+  summary: string;
+  tags?: string[];
+  compact?: boolean;
+}
+
+const { title, summary, tags = [], compact = false } = Astro.props;
+---
+<article class="content-card">
+  <h3>{title}</h3>
+  {!compact && <p>{summary}</p>}
+  {tags.length > 0 && (
+    <ul class="tag-list">
+      {tags.map((tag) => <li>{tag}</li>)}
+    </ul>
+  )}
+</article>

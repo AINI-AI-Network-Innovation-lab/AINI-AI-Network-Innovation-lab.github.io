@@ -1,0 +1,35 @@
+---
+import site from "../data/site.json";
+---
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <p class="eyebrow">AI Systems + Network Innovation</p>
+      <h1>{site.tagline}</h1>
+      <p class="hero-copy">Research on intelligent infrastructure, resilient networks, and deployable AI systems.</p>
+      <div class="hero-actions">
+        <a class="button primary" href={site.ctaPrimary.href}>{site.ctaPrimary.label}</a>
+        <a class="button secondary" href={site.ctaSecondary.href}>{site.ctaSecondary.label}</a>
+      </div>
+    </div>
+    <div class="hero-panel">
+      <div class="hero-logo-card">
+        <img src="/logo.jpeg" alt="AINI Lab logo" class="hero-logo" />
+      </div>
+      <div class="hero-metrics">
+        <div class="signal-card">
+          <span>Research Areas</span>
+          <strong>AI Infrastructure</strong>
+        </div>
+        <div class="signal-card">
+          <span>Current Focus</span>
+          <strong>Trustworthy Edge Intelligence</strong>
+        </div>
+        <div class="signal-card">
+          <span>Mode</span>
+          <strong>Open Collaboration</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

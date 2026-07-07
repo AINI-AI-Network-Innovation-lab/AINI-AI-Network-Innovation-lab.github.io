@@ -1,0 +1,25 @@
+---
+import type { ResourceItem } from "../types";
+
+interface Props {
+  resources: ResourceItem[];
+}
+
+const { resources } = Astro.props;
+---
+<div class="card-grid two-up">
+  {resources.map((resource) => (
+    <article class="content-card resource-card">
+      <p class="eyebrow">{resource.category}</p>
+      <h3>{resource.title}</h3>
+      <p>{resource.summary}</p>
+      <div class="link-row">
+        {resource.href && <a href={resource.href}>Open Resource</a>}
+        {resource.secondaryHref && resource.secondaryLabel && (
+          <a href={resource.secondaryHref}>{resource.secondaryLabel}</a>
+        )}
+      </div>
+    </article>
+  ))}
+</div>
+

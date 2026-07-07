@@ -1,0 +1,25 @@
+{
+  "labName": "AINI Lab",
+  "tagline": "Advancing AI systems and network innovation through rigorous, applied research.",
+  "description": "AINI Lab explores intelligent systems, resilient networks, and real-world AI deployment through interdisciplinary research, open tooling, and collaboration across academia and industry.",
+  "email": "hello@aini-lab.example",
+  "githubUrl": "https://github.com/AINI-AI-Network-Innovation-lab",
+  "ctaPrimary": {
+    "label": "Explore Research",
+    "href": "/research"
+  },
+  "ctaSecondary": {
+    "label": "Contact",
+    "href": "#contact"
+  },
+  "socialLinks": [
+    {
+      "label": "GitHub",
+      "href": "https://github.com/AINI-AI-Network-Innovation-lab"
+    },
+    {
+      "label": "Email",
+      "href": "mailto:hello@aini-lab.example"
+    }
+  ]
+}

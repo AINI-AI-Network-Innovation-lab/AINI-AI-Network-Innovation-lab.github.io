@@ -1,0 +1,31 @@
+---
+import ResourceGrid from "../components/ResourceGrid.astro";
+import SectionHeader from "../components/SectionHeader.astro";
+import resources from "../data/resources.json";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import type { ResourceItem } from "../types";
+
+const typedResources = [...(resources as ResourceItem[])].sort((a, b) => a.order - b.order);
+---
+<BaseLayout title="Resources" description="Starter resources, code links, and research entry points from AINI Lab.">
+  <section class="page-hero">
+    <div class="container narrow">
+      <p class="eyebrow">Resources</p>
+      <h1>Useful entry points for reading, code, and collaboration.</h1>
+      <p class="section-copy">
+        This page collects the lab's public-facing resources in one place so new students, collaborators, and visitors can orient quickly.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <SectionHeader
+        title="Lab resources"
+        description="The current list is sample content and can later expand into datasets, repositories, reading lists, onboarding notes, and external links."
+      />
+      <ResourceGrid resources={typedResources} />
+    </div>
+  </section>
+</BaseLayout>
+

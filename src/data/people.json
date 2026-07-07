@@ -1,0 +1,64 @@
+[
+  {
+    "name": "Dr. Linh Tran",
+    "role": "Director, AINI Lab",
+    "group": "lead",
+    "affiliation": "Faculty of Computer Science and Intelligent Systems",
+    "bio": "Leads the lab's agenda on trustworthy AI infrastructure, adaptive networking, and translational research partnerships with public-sector and industry collaborators.",
+    "links": [
+      {
+        "label": "Profile",
+        "href": "https://github.com/AINI-AI-Network-Innovation-lab"
+      }
+    ],
+    "order": 1
+  },
+  {
+    "name": "Minh Nguyen",
+    "role": "Research Scientist",
+    "group": "researcher",
+    "affiliation": "Distributed Intelligence Group",
+    "bio": "Works on scalable model serving, network-aware orchestration, and systems evaluation for large-model deployment.",
+    "order": 2
+  },
+  {
+    "name": "Sara Pham",
+    "role": "Postgraduate Researcher",
+    "group": "researcher",
+    "affiliation": "Trustworthy Systems Group",
+    "bio": "Studies robust learning under unreliable connectivity, partial observability, and distribution shift in the edge setting.",
+    "order": 3
+  },
+  {
+    "name": "Anh Le",
+    "role": "Student Researcher",
+    "group": "student",
+    "affiliation": "AI for Networks Track",
+    "bio": "Builds evaluation pipelines for edge intelligence and spectrum-aware learning.",
+    "order": 4
+  },
+  {
+    "name": "Nora Ho",
+    "role": "Student Researcher",
+    "group": "student",
+    "affiliation": "Applied ML Systems",
+    "bio": "Focuses on efficient multimodal models for constrained devices and lightweight evaluation pipelines for deployment studies.",
+    "order": 5
+  },
+  {
+    "name": "Bao Vu",
+    "role": "Research Engineer",
+    "group": "researcher",
+    "affiliation": "AI Infrastructure and Tooling",
+    "bio": "Maintains reproducible experiment stacks, benchmarking workflows, and open-source infrastructure used across multiple lab projects.",
+    "order": 6
+  },
+  {
+    "name": "Quoc Bui",
+    "role": "Alumnus",
+    "group": "alumni",
+    "affiliation": "Now at Research Industry Lab",
+    "bio": "Contributed to the lab's first open benchmarking stack for adaptive edge inference.",
+    "order": 7
+  }
+]

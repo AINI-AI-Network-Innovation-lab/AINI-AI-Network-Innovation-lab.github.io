@@ -1,0 +1,57 @@
+---
+import type { Publication } from "../types";
+import { groupPublicationsByYear } from "../lib/content";
+
+interface Props {
+  publications: Publication[];
+  grouped?: boolean;
+  compact?: boolean;
+}
+
+const { publications, grouped = false, compact = false } = Astro.props;
+
+const groups = grouped ? groupPublicationsByYear(publications) : null;
+const years = groups ? Object.keys(groups).sort((a, b) => Number(b) - Number(a)) : [];
+---
+{grouped && groups ? (
+  <div class="publication-groups">
+    {years.map((year) => (
+      <section class="publication-year">
+        <h3>{year}</h3>
+        <ul class="publication-list">
+          {groups[year].map((publication) => (
+            <li>
+              <strong>{publication.title}</strong>
+              <p>{publication.authors.join(", ")}</p>
+              <p>{publication.venue}</p>
+              {publication.topicTags && (
+                <ul class="tag-list">
+                  {publication.topicTags.map((tag) => <li>{tag}</li>)}
+                </ul>
+              )}
+              <div class="link-row">
+                {publication.paperUrl && <a href={publication.paperUrl}>Paper</a>}
+                {publication.codeUrl && <a href={publication.codeUrl}>Code</a>}
+              </div>
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))}
+  </div>
+) : (
+  <ul class="publication-list">
+    {publications.map((publication) => (
+      <li>
+        <strong>{publication.title}</strong>
+        {!compact && <p>{publication.authors.join(", ")}</p>}
+        <p>{publication.venue} · {publication.year}</p>
+        {publication.topicTags && (
+          <ul class="tag-list">
+            {publication.topicTags.map((tag) => <li>{tag}</li>)}
+          </ul>
+        )}
+      </li>
+    ))}
+  </ul>
+)}

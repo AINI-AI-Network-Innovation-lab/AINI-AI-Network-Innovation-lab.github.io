@@ -1,0 +1,18 @@
+---
+import site from "../data/site.json";
+---
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="footer-brand">
+        <img src="/logo.jpeg" alt="AINI Lab logo" class="footer-logo" />
+        <p class="eyebrow">AINI Lab</p>
+      </div>
+      <h2>{site.tagline}</h2>
+    </div>
+    <div>
+      <p><a href={`mailto:${site.email}`}>{site.email}</a></p>
+      <p><a href={site.githubUrl}>GitHub Organization</a></p>
+    </div>
+  </div>
+</footer>

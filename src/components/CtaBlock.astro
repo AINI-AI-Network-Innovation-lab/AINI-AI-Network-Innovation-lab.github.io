@@ -1,0 +1,20 @@
+---
+interface Props {
+  title: string;
+  copy: string;
+  primaryHref: string;
+  primaryLabel: string;
+}
+
+const { title, copy, primaryHref, primaryLabel } = Astro.props;
+---
+<section class="cta-block" id="contact">
+  <div class="container cta-inner">
+    <div>
+      <p class="eyebrow">Join and Collaborate</p>
+      <h2>{title}</h2>
+      <p class="section-copy">{copy}</p>
+    </div>
+    <a class="button primary" href={primaryHref}>{primaryLabel}</a>
+  </div>
+</section>

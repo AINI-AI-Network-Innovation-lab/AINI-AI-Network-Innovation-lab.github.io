@@ -1,0 +1,58 @@
+---
+import PeopleGrid from "../components/PeopleGrid.astro";
+import SectionHeader from "../components/SectionHeader.astro";
+import people from "../data/people.json";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { sortPeople } from "../lib/content";
+import type { Person } from "../types";
+
+const typedPeople = people as Person[];
+const sortedPeople = sortPeople(typedPeople);
+const groups = {
+  lead: sortedPeople.filter((entry) => entry.group === "lead"),
+  researcher: sortedPeople.filter((entry) => entry.group === "researcher"),
+  student: sortedPeople.filter((entry) => entry.group === "student"),
+  alumni: sortedPeople.filter((entry) => entry.group === "alumni")
+};
+---
+<BaseLayout title="People" description="Meet the researchers and students in AINI Lab.">
+  <section class="page-hero">
+    <div class="container narrow">
+      <p class="eyebrow">People</p>
+      <h1>A compact research team building across disciplines.</h1>
+      <p class="section-copy">
+        The people page is structured to grow with the lab while keeping lead, researchers, students, and alumni easy to maintain in one data file.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <SectionHeader title="Lab Lead" />
+      <PeopleGrid people={groups.lead} />
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <SectionHeader title="Researchers" />
+      <PeopleGrid people={groups.researcher} />
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <SectionHeader title="Students" />
+      <PeopleGrid people={groups.student} />
+    </div>
+  </section>
+
+  {groups.alumni.length > 0 && (
+    <section class="section">
+      <div class="container">
+        <SectionHeader title="Alumni" />
+        <PeopleGrid people={groups.alumni} />
+      </div>
+    </section>
+  )}
+</BaseLayout>

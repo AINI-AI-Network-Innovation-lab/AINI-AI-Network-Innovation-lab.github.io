@@ -1,0 +1,27 @@
+---
+interface Props {
+  title: string;
+  summary: string;
+  tags?: string[];
+  links?: { label: string; href: string }[];
+  compact?: boolean;
+}
+
+const { title, summary, tags = [], links = [], compact = false } = Astro.props;
+---
+<article class="content-card project-card">
+  <h3>{title}</h3>
+  {!compact && <p>{summary}</p>}
+  {tags.length > 0 && (
+    <ul class="tag-list">
+      {tags.map((tag) => <li>{tag}</li>)}
+    </ul>
+  )}
+  {links.length > 0 && (
+    <div class="link-row">
+      {links.map((link) => (
+        <a href={link.href}>{link.label}</a>
+      ))}
+    </div>
+  )}
+</article>

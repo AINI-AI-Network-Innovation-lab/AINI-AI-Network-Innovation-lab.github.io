@@ -1,0 +1,108 @@
+---
+import { getCollection } from "astro:content";
+import CtaBlock from "../components/CtaBlock.astro";
+import Hero from "../components/Hero.astro";
+import NewsList from "../components/NewsList.astro";
+import PeopleGrid from "../components/PeopleGrid.astro";
+import ProjectCard from "../components/ProjectCard.astro";
+import PublicationList from "../components/PublicationList.astro";
+import ResearchCard from "../components/ResearchCard.astro";
+import SectionHeader from "../components/SectionHeader.astro";
+import site from "../data/site.json";
+import people from "../data/people.json";
+import publications from "../data/publications.json";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import {
+  byOrder,
+  selectFeaturedNews,
+  selectFeaturedProjects,
+  selectFeaturedPublications,
+  selectPeopleSnapshot
+} from "../lib/content";
+import type { Person, Publication } from "../types";
+
+const research = byOrder(await getCollection("research")).slice(0, 3);
+const projects = selectFeaturedProjects(await getCollection("projects"), 3);
+const news = selectFeaturedNews(await getCollection("news"), 2);
+const typedPeople = people as Person[];
+const typedPublications = publications as Publication[];
+const featuredPublications = selectFeaturedPublications(typedPublications, 3);
+const peopleSnapshot = selectPeopleSnapshot(typedPeople, 3);
+---
+<BaseLayout title="Home" description={site.description}>
+  <Hero />
+
+  <section class="section">
+    <div class="container">
+      <SectionHeader
+        eyebrow="Research Areas"
+        title="Research areas"
+      />
+      <div class="card-grid three-up">
+        {research.map((entry) => (
+          <ResearchCard title={entry.data.title} summary={entry.data.summary} tags={entry.data.tags} compact />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <SectionHeader
+        eyebrow="Featured Projects"
+        title="Featured projects"
+      />
+      <div class="card-grid three-up">
+        {projects.map((entry) => (
+          <ProjectCard
+            title={entry.data.title}
+            summary={entry.data.summary}
+            tags={entry.data.tags}
+            links={entry.data.links}
+            compact
+          />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <SectionHeader
+        eyebrow="Selected Publications"
+        title="Selected publications"
+      />
+      <PublicationList publications={featuredPublications} compact />
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <SectionHeader
+        eyebrow="People Snapshot"
+        title="People"
+      />
+      <PeopleGrid people={peopleSnapshot} compact />
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <SectionHeader
+        eyebrow="News Highlights"
+        title="Latest updates"
+      />
+      <NewsList entries={news} compact />
+      <div class="section-link-row">
+        <a class="section-link" href="/activities">View all activities</a>
+      </div>
+    </div>
+  </section>
+
+  <CtaBlock
+    title="Open to students, collaborators, and research partners."
+    copy="Reach out for student opportunities, research collaboration, or project discussion."
+    primaryHref={`mailto:${site.email}`}
+    primaryLabel="Contact the Lab"
+  />
+</BaseLayout>
