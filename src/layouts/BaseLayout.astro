@@ -25,6 +25,7 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
     <meta property="og:type" content="website" />
     <meta property="og:url" content={canonicalUrl.toString()} />
     <link rel="canonical" href={canonicalUrl.toString()} />
+    <link rel="icon" type="image/jpeg" href="/logo.jpeg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link

@@ -13,11 +13,11 @@
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.2.1",
-    "astro": "^5.11.0"
+    "astro": "^7.0.6"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.9",
     "typescript": "^5.9.2",
-    "vitest": "^2.0.5"
+    "vitest": "^4.1.10"
   }
 }
