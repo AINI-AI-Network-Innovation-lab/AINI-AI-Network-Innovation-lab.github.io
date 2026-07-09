@@ -1,17 +1,23 @@
 [
   {
-    "name": "Dr. Linh Tran",
+    "name": "Dr. Hai Anh Tran",
     "role": "Director, AINI Lab",
     "group": "lead",
-    "affiliation": "Faculty of Computer Science and Intelligent Systems",
-    "bio": "Leads the lab's agenda on trustworthy AI infrastructure, adaptive networking, and translational research partnerships with public-sector and industry collaborators.",
+    "affiliation": "Department Of Computer Engineering, School of Information and Communication Technology",
+    "bio": "His research interests lie in the area of Distributed Systems, Computer network architectures, algorithms and protocols, Computer and network security, Computer communications systems hardware and software technology.",
     "links": [
       {
         "label": "Profile",
-        "href": "https://github.com/AINI-AI-Network-Innovation-lab"
+        "href": "https://soict.hust.edu.vn/en/ph-d-tran-hai-anh.html"
       }
     ],
     "order": 1
+  },
+  "name": "Dr. Nam Thang Hoang",
+    "role": "Director, AINI Lab",
+    "group": "lead",
+    "affiliation": "Department of Information Technology, Hanoi University of Civil Engineering",
+    "order": 2
   },
   {
     "name": "Minh Nguyen",
