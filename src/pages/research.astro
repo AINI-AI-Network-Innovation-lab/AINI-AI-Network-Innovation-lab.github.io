@@ -2,7 +2,6 @@
 import { getCollection } from "astro:content";
 import ProjectCard from "../components/ProjectCard.astro";
 import ResearchCard from "../components/ResearchCard.astro";
-import SectionHeader from "../components/SectionHeader.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { byOrder } from "../lib/content";
 
@@ -20,7 +19,6 @@ const projects = byOrder(await getCollection("projects"));
 
   <section class="section">
     <div class="container">
-      <SectionHeader title="Research Areas" description="Core directions." />
       <div class="card-grid three-up">
         {research.map((entry) => (
           <ResearchCard title={entry.data.title} summary={entry.data.summary} tags={entry.data.tags} />
@@ -31,7 +29,6 @@ const projects = byOrder(await getCollection("projects"));
 
   <section class="section">
     <div class="container">
-      <SectionHeader title="Featured Projects" description="Selected systems work." />
       <div class="card-grid three-up">
         {projects.map((entry) => (
           <ProjectCard

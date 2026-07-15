@@ -1,7 +1,6 @@
 ---
 import { getCollection } from "astro:content";
 import NewsList from "../components/NewsList.astro";
-import SectionHeader from "../components/SectionHeader.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { byDate } from "../lib/content";
 
@@ -18,10 +17,6 @@ const activities = byDate(await getCollection("news"));
 
   <section class="section">
     <div class="container">
-      <SectionHeader
-        title="Recent activities"
-        description="Latest lab updates."
-      />
       <NewsList entries={activities} />
     </div>
   </section>

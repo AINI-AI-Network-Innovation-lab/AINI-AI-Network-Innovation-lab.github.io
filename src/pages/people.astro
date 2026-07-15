@@ -1,6 +1,5 @@
 ---
 import PeopleGrid from "../components/PeopleGrid.astro";
-import SectionHeader from "../components/SectionHeader.astro";
 import people from "../data/people.json";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { sortPeople } from "../lib/content";
@@ -26,21 +25,18 @@ const groups = {
 
   <section class="section">
     <div class="container">
-      <SectionHeader title="Lab Lead" />
       <PeopleGrid people={groups.lead} />
     </div>
   </section>
 
   <section class="section">
     <div class="container">
-      <SectionHeader title="Researchers" />
       <PeopleGrid people={groups.researcher} />
     </div>
   </section>
 
   <section class="section">
     <div class="container">
-      <SectionHeader title="Students" />
       <PeopleGrid people={groups.student} />
     </div>
   </section>
@@ -48,7 +44,6 @@ const groups = {
   {groups.alumni.length > 0 && (
     <section class="section">
       <div class="container">
-        <SectionHeader title="Alumni" />
         <PeopleGrid people={groups.alumni} />
       </div>
     </section>

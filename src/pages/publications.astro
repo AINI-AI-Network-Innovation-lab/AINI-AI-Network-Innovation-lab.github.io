@@ -1,6 +1,5 @@
 ---
 import PublicationList from "../components/PublicationList.astro";
-import SectionHeader from "../components/SectionHeader.astro";
 import publications from "../data/publications.json";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import type { Publication } from "../types";
@@ -19,7 +18,6 @@ const sorted = [...typedPublications].sort((a, b) => b.year - a.year || a.title.
 
   <section class="section">
     <div class="container">
-      <SectionHeader title="Publication Archive" />
       <PublicationList publications={sorted} grouped />
     </div>
   </section>

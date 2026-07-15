@@ -1,6 +1,5 @@
 ---
 import ResourceGrid from "../components/ResourceGrid.astro";
-import SectionHeader from "../components/SectionHeader.astro";
 import resources from "../data/resources.json";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import type { ResourceItem } from "../types";
@@ -18,10 +17,6 @@ const typedResources = [...(resources as ResourceItem[])].sort((a, b) => a.order
 
   <section class="section">
     <div class="container">
-      <SectionHeader
-        title="Lab resources"
-        description="Starter links and materials."
-      />
       <ResourceGrid resources={typedResources} />
     </div>
   </section>
