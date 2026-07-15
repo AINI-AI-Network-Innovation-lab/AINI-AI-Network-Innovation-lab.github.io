@@ -3,8 +3,8 @@
     "name": "Dr. Hai Anh Tran",
     "role": "Director, AINI Lab",
     "group": "lead",
-    "affiliation": "Department Of Computer Engineering, School of Information and Communication Technology, Hanoi University of Science and Technology",
-    "bio": "His research interests lie in the area of Distributed Systems, Computer network architectures, algorithms and protocols, Computer and network security, Computer communications systems hardware and software technology.",
+    "affiliation": "Department of Computer Engineering, School of Information and Communication Technology, Hanoi University of Science and Technology",
+    "bio": "His research interests include distributed systems, computer network architectures, algorithms and protocols, computer and network security, and communication systems hardware and software.",
     "links": [
       {
         "label": "Profile",
@@ -14,11 +14,11 @@
     "order": 1
   },
   {
-  "name": "Dr. Nam Thang Hoang",
+    "name": "Dr. Nam Thang Hoang",
     "role": "Lead-Director, AINI Lab",
     "group": "lead",
     "affiliation": "Department of Information Technology, Hanoi University of Civil Engineering",
-    "bio": "His research interests lie in the area Software Defined Network.",
+    "bio": "His research interests focus on software-defined networking.",
     "order": 2
   },
   {
@@ -26,7 +26,7 @@
     "role": "Research Assistant",
     "group": "researcher",
     "affiliation": "AI Engineer, Viettel Cyber Security, Viettel Group",
-    "bio": "Works on ptimizing FL on Non-iid, Straggler effect and Preserving privacy environments.",
+    "bio": "Works on optimizing federated learning for non-IID settings, straggler mitigation, and privacy-preserving environments.",
     "order": 3
   },
   {
@@ -42,7 +42,7 @@
     "role": "Student Researcher",
     "group": "student",
     "affiliation": "School of Information and Communication Technology, Hanoi University of Science and Technology",
-    "bio": "Works on LLM Unlearning on Federated Learning setting",
+    "bio": "Works on LLM unlearning in federated learning settings.",
     "order": 5
   },
   {
@@ -65,7 +65,7 @@
     "name": "Cong Son Duong",
     "role": "Alumnus",
     "group": "alumni",
-    "affiliation": "Now study for a PhD in France",
+    "affiliation": "Now studying for a PhD in France",
     "bio": "",
     "order": 8
   },
@@ -73,7 +73,7 @@
     "name": "Tran Le Tuan Nguyen",
     "role": "Alumnus",
     "group": "alumni",
-    "affiliation": "Now study for a PhD in France",
+    "affiliation": "Now studying for a PhD in France",
     "bio": "",
     "order": 9
   },
@@ -81,7 +81,7 @@
     "name": "Quang Duy Hoang",
     "role": "Alumnus",
     "group": "alumni",
-    "affiliation": "Now working in the Industry",
+    "affiliation": "Now working in industry",
     "bio": "",
     "order": 10
   }
