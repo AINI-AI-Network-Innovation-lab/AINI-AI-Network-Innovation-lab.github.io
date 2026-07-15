@@ -12,16 +12,14 @@ const sorted = [...typedPublications].sort((a, b) => b.year - a.year || a.title.
   <section class="page-hero">
     <div class="container narrow">
       <p class="eyebrow">Publications</p>
-      <h1>Scholarly outputs across systems, networking, and applied AI.</h1>
-      <p class="section-copy">
-        Publications are grouped by year and include lightweight metadata so visitors can quickly see topics, venues, and open resources.
-      </p>
+      <h1>Publications in AI and networking.</h1>
+      <p class="section-copy">By year, venue, and topic.</p>
     </div>
   </section>
 
   <section class="section">
     <div class="container">
-      <SectionHeader title="Publication Archive" description="The current entries are fictional sample content for the initial site scaffold and can be replaced with the lab's real bibliography." />
+      <SectionHeader title="Publication Archive" description="Sample entries for now." />
       <PublicationList publications={sorted} grouped />
     </div>
   </section>

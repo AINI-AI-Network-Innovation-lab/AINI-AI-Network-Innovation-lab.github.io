@@ -11,10 +11,8 @@ const typedResources = [...(resources as ResourceItem[])].sort((a, b) => a.order
   <section class="page-hero">
     <div class="container narrow">
       <p class="eyebrow">Resources</p>
-      <h1>Useful entry points for reading, code, and collaboration.</h1>
-      <p class="section-copy">
-        This page collects the lab's public-facing resources in one place so new students, collaborators, and visitors can orient quickly.
-      </p>
+      <h1>Code, reading, and links.</h1>
+      <p class="section-copy">Public resources in one place.</p>
     </div>
   </section>
 
@@ -22,10 +20,9 @@ const typedResources = [...(resources as ResourceItem[])].sort((a, b) => a.order
     <div class="container">
       <SectionHeader
         title="Lab resources"
-        description="The current list is sample content and can later expand into datasets, repositories, reading lists, onboarding notes, and external links."
+        description="Starter links and materials."
       />
       <ResourceGrid resources={typedResources} />
     </div>
   </section>
 </BaseLayout>
-

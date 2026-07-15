@@ -180,8 +180,15 @@ h3 {
 }
 
 .hero-copy {
-  max-width: 62ch;
-  font-size: 1.08rem;
+  max-width: 52ch;
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+.section-copy {
+  max-width: 54ch;
+  font-size: 0.96rem;
+  line-height: 1.55;
 }
 
 .hero-actions,

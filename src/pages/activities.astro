@@ -11,10 +11,8 @@ const activities = byDate(await getCollection("news"));
   <section class="page-hero">
     <div class="container narrow">
       <p class="eyebrow">Activities</p>
-      <h1>Lab activities, announcements, and community updates.</h1>
-      <p class="section-copy">
-        A running archive of seminars, publications, opportunities, and public-facing milestones from AINI Lab.
-      </p>
+      <h1>News and activities.</h1>
+      <p class="section-copy">Talks, updates, and opportunities.</p>
     </div>
   </section>
 
@@ -22,7 +20,7 @@ const activities = byDate(await getCollection("news"));
     <div class="container">
       <SectionHeader
         title="Recent activities"
-        description="This page reuses the lab's update collection so new announcements can appear on both the homepage and the full archive."
+        description="Latest lab updates."
       />
       <NewsList entries={activities} />
     </div>
