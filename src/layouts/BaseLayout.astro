@@ -10,7 +10,9 @@ interface Props {
 }
 
 const { title, description = site.description } = Astro.props;
-const pageTitle = title === site.labName ? site.labName : `${title} | ${site.labName}`;
+const normalizedTitle = title.trim().toLowerCase();
+const normalizedLabName = site.labName.trim().toLowerCase();
+const pageTitle = normalizedTitle === normalizedLabName ? title : `${title} | ${site.labName}`;
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
 ---
 <!doctype html>
