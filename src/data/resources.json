@@ -1,33 +1,9 @@
 [
   {
-    "title": "Publication List",
-    "category": "Reading",
-    "summary": "A curated starting point for understanding the lab's recent directions, venues, and recurring themes.",
-    "href": "/publications",
-    "order": 1
-  },
-  {
-    "title": "Open Research Projects",
-    "category": "Projects",
-    "summary": "Representative systems and benchmarking efforts that illustrate how research ideas become working artifacts.",
-    "href": "/research",
-    "order": 2
-  },
-  {
     "title": "GitHub Organization",
     "category": "Code",
-    "summary": "Public repositories, starter code, and implementation artifacts shared through the lab organization.",
+    "summary": "Public repositories and research code.",
     "href": "https://github.com/AINI-AI-Network-Innovation-lab",
-    "order": 3
-  },
-  {
-    "title": "Student Onboarding Notes",
-    "category": "Internal-style Sample",
-    "summary": "A placeholder section for future onboarding checklists, reading sequences, and contribution guidelines for new members.",
-    "href": "mailto:hello@aini-lab.example",
-    "secondaryHref": "/activities",
-    "secondaryLabel": "View Lab Activities",
-    "order": 4
+    "order": 1
   }
 ]
-
