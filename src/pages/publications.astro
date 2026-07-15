@@ -19,7 +19,7 @@ const sorted = [...typedPublications].sort((a, b) => b.year - a.year || a.title.
 
   <section class="section">
     <div class="container">
-      <SectionHeader title="Publication Archive" description="Google Scholar entries from 2023 onward." />
+      <SectionHeader title="Publication Archive" />
       <PublicationList publications={sorted} grouped />
     </div>
   </section>
