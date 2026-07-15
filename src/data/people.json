@@ -3,7 +3,7 @@
     "name": "Dr. Hai Anh Tran",
     "role": "Director, AINI Lab",
     "group": "lead",
-    "affiliation": "Department Of Computer Engineering, School of Information and Communication Technology",
+    "affiliation": "Department Of Computer Engineering, School of Information and Communication Technology, Hanoi University of Science and Technology",
     "bio": "His research interests lie in the area of Distributed Systems, Computer network architectures, algorithms and protocols, Computer and network security, Computer communications systems hardware and software technology.",
     "links": [
       {
@@ -15,57 +15,75 @@
   },
   {
   "name": "Dr. Nam Thang Hoang",
-    "role": "Director, AINI Lab",
+    "role": "Lead-Director, AINI Lab",
     "group": "lead",
     "affiliation": "Department of Information Technology, Hanoi University of Civil Engineering",
+    "bio": "His research interests lie in the area Software Defined Network.",
     "order": 2
   },
   {
-    "name": "Minh Nguyen",
-    "role": "Research Scientist",
+    "name": "Huy Hieu Nguyen",
+    "role": "Research Assistant",
     "group": "researcher",
-    "affiliation": "Distributed Intelligence Group",
-    "bio": "Works on scalable model serving, network-aware orchestration, and systems evaluation for large-model deployment.",
+    "affiliation": "AI Engineer, Viettel Cyber Security, Viettel Group",
+    "bio": "Works on ptimizing FL on Non-iid, Straggler effect and Preserving privacy environments.",
     "order": 2
   },
   {
-    "name": "Sara Pham",
-    "role": "Postgraduate Researcher",
-    "group": "researcher",
-    "affiliation": "Trustworthy Systems Group",
-    "bio": "Studies robust learning under unreliable connectivity, partial observability, and distribution shift in the edge setting.",
-    "order": 3
-  },
-  {
-    "name": "Anh Le",
+    "name": "Anh Tu Hoang",
     "role": "Student Researcher",
     "group": "student",
-    "affiliation": "AI for Networks Track",
-    "bio": "Builds evaluation pipelines for edge intelligence and spectrum-aware learning.",
+    "affiliation": "School of Information and Communication Technology, Hanoi University of Science and Technology",
+    "bio": "",
     "order": 4
   },
   {
-    "name": "Nora Ho",
+    "name": "Thanh Nam Nguyen",
     "role": "Student Researcher",
     "group": "student",
-    "affiliation": "Applied ML Systems",
-    "bio": "Focuses on efficient multimodal models for constrained devices and lightweight evaluation pipelines for deployment studies.",
-    "order": 5
+    "affiliation": "School of Information and Communication Technology, Hanoi University of Science and Technology",
+    "bio": "Works on LLM Unlearning on Federated Learning setting",
+    "order": 4
   },
   {
-    "name": "Bao Vu",
-    "role": "Research Engineer",
-    "group": "researcher",
-    "affiliation": "AI Infrastructure and Tooling",
-    "bio": "Maintains reproducible experiment stacks, benchmarking workflows, and open-source infrastructure used across multiple lab projects.",
-    "order": 6
+    "name": "Minh Quang Phan",
+    "role": "Student Researcher",
+    "group": "student",
+    "affiliation": "School of Information and Communication Technology, Hanoi University of Science and Technology",
+    "bio": "",
+    "order": 4
   },
   {
-    "name": "Quoc Bui",
+    "name": "Cong Huan Nguyen",
+    "role": "Student Researcher",
+    "group": "student",
+    "affiliation": "School of Information and Communication Technology, Hanoi University of Science and Technology",
+    "bio": "",
+    "order": 4
+  },
+  {
+    "name": "Cong Son Duong",
     "role": "Alumnus",
     "group": "alumni",
-    "affiliation": "Now at Research Industry Lab",
-    "bio": "Contributed to the lab's first open benchmarking stack for adaptive edge inference.",
+    "affiliation": "Now study for a PhD in France",
+    "bio": "",
+    "order": 7
+  }
+  {
+    "name": "Tran Le Tuan Nguyen",
+    "role": "Alumnus",
+    "group": "alumni",
+    "affiliation": "Now study for a PhD in France",
+    "bio": "",
+    "order": 7
+  }
+  
+  {
+    "name": "Quang Duy Hoang",
+    "role": "Alumnus",
+    "group": "alumni",
+    "affiliation": "Now working in the Industry",
+    "bio": "",
     "order": 7
   }
 ]
