@@ -1,54 +1,93 @@
 [
   {
-    "title": "Adaptive Federated Scheduling for Unreliable Edge Networks",
-    "authors": ["Linh Tran", "Minh Nguyen", "Sara Pham"],
-    "venue": "IEEE INFOCOM Workshop",
+    "title": "Multi-source Adaptive Boosting for Encrypted Traffic Classification in Heterogeneous SDNs",
+    "authors": ["Nam-Thang Hoang", "Cong-Son Duong", "Tuan Nguyen", "Hai-Anh Tran"],
+    "venue": "International Journal of Machine Learning and Cybernetics 17",
     "year": 2026,
-    "topicTags": ["federated learning", "edge systems"],
-    "paperUrl": "https://github.com/AINI-AI-Network-Innovation-lab",
-    "featured": true
+    "paperUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=GDpnurQAAAAJ&sortby=pubdate&citation_for_view=GDpnurQAAAAJ:0EnyYjriUFMC"
   },
   {
-    "title": "Trustworthy Network Telemetry for AI-Native Infrastructure",
-    "authors": ["Linh Tran", "Anh Le"],
-    "venue": "ACM CoNEXT",
+    "title": "Applying Federated Learning For Encrypted Traffic Classification In Multi-domain Software Defined Network",
+    "authors": ["HAT Huy-Hieu Nguyen", "Quang-Duy Hoang", "Hoang-Hai Dang", "Hoang-Viet Tran", "Nam et al."],
+    "venue": "THE 18th NATIONAL CONFERENCE ON FUNDAMENTAL AND APPLIED INFORMATION…",
     "year": 2025,
-    "topicTags": ["telemetry", "network intelligence"],
-    "paperUrl": "https://github.com/AINI-AI-Network-Innovation-lab",
-    "codeUrl": "https://github.com/AINI-AI-Network-Innovation-lab/project-telemetry",
-    "featured": true
+    "paperUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=GDpnurQAAAAJ&sortby=pubdate&citation_for_view=GDpnurQAAAAJ:hqOjcs7Dif8C"
   },
   {
-    "title": "Resource-Aware Multimodal Inference at the Network Edge",
-    "authors": ["Sara Pham", "Nora Ho", "Linh Tran"],
-    "venue": "NeurIPS Workshop",
+    "title": "Towards Efficient and Adaptive Traffic Classification: A Knowledge Distillation-Based Personalized Federated Learning Framework",
+    "authors": ["HA Tran", "NT Hoang"],
+    "venue": "IEEE Transactions on Network and Service Management",
     "year": 2025,
-    "topicTags": ["multimodal AI", "edge inference"],
-    "paperUrl": "https://github.com/AINI-AI-Network-Innovation-lab",
-    "featured": true
+    "paperUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=GDpnurQAAAAJ&sortby=pubdate&citation_for_view=GDpnurQAAAAJ:roLk4NBRz8UC"
   },
   {
-    "title": "OpenBench-NI: A Benchmark Suite for Networked Intelligence",
-    "authors": ["Quoc Bui", "Minh Nguyen", "Linh Tran"],
-    "venue": "Journal of Systems Research",
-    "year": 2024,
-    "topicTags": ["benchmarking", "systems"],
-    "paperUrl": "https://github.com/AINI-AI-Network-Innovation-lab"
+    "title": "GRFuzz: A Deep Reinforcement Learning Approach to Python Library Fuzzing with GRPO",
+    "authors": ["VA Le-Minh", "HA Tran", "HH Nguyen", "NT Hoang", "TX Tran"],
+    "venue": "2025 IEEE International Conference on Information Reuse and Integration and…",
+    "year": 2025,
+    "paperUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=GDpnurQAAAAJ&sortby=pubdate&citation_for_view=GDpnurQAAAAJ:ufrVoPGSRksC"
   },
   {
-    "title": "Efficient Coordination Policies for Collaborative Edge Agents",
-    "authors": ["Anh Le", "Linh Tran"],
-    "venue": "AAAI Symposium",
-    "year": 2024,
-    "topicTags": ["multi-agent systems", "coordination"],
-    "paperUrl": "https://github.com/AINI-AI-Network-Innovation-lab"
+    "title": "Efficient Federated Learning Convergence with Epoch Adaptation",
+    "authors": ["HH Nguyen", "NT Hoang", "HA Tran", "T Mandal", "R Annareddy", "P Choudhary", "et al."],
+    "venue": "2025 IEEE International Conference on Information Reuse and Integration and…",
+    "year": 2025,
+    "paperUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=GDpnurQAAAAJ&sortby=pubdate&citation_for_view=GDpnurQAAAAJ:WF5omc3nYNoC"
   },
   {
-    "title": "Benchmarking Failure Recovery in AI-Native Network Control Loops",
-    "authors": ["Bao Vu", "Minh Nguyen", "Linh Tran"],
-    "venue": "IEEE/IFIP NOMS",
+    "title": "MTMLD-AWSR: A Novel Multi-Teacher Multi-Level Distillation Approach for Class Incremental Learning in Edge-Cloud Systems",
+    "authors": ["PT Nguyen", "HA Tran", "HH Nguyen", "NT Hoang", "T Mandal", "R Annareddy", "et al."],
+    "venue": "2025 IEEE Cloud Summit, 95-100",
+    "year": 2025,
+    "paperUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=GDpnurQAAAAJ&sortby=pubdate&citation_for_view=GDpnurQAAAAJ:YsMSGLbcyi4C"
+  },
+  {
+    "title": "Encrypted traffic classification through deep domain adaptation network with smooth characteristic function",
+    "authors": ["V Tong", "C Dao", "HA Tran", "D Tran", "HTT Binh", "T Hoang-Nam", "TX Tran"],
+    "venue": "IEEE Transactions on Network and Service Management 22 (1), 331-343",
+    "year": 2025,
+    "paperUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=GDpnurQAAAAJ&sortby=pubdate&citation_for_view=GDpnurQAAAAJ:W7OEmFMy1HYC"
+  },
+  {
+    "title": "A new transfer learning-based traffic classification algorithm for a multi-domain sdn network",
+    "authors": ["NT Hoang", "CS Duong", "MN Vu", "HH Nguyen", "XT Tran", "V Tong", "HA Tran"],
+    "venue": "Proceedings of the 12th International Symposium on Information and…",
     "year": 2023,
-    "topicTags": ["network control", "benchmarking", "reliability"],
-    "paperUrl": "https://github.com/AINI-AI-Network-Innovation-lab"
+    "paperUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=GDpnurQAAAAJ&sortby=pubdate&citation_for_view=GDpnurQAAAAJ:UeHWp8X0CEIC"
+  },
+  {
+    "title": "Server and Route Selection Optimization for Knowledge-defined Distributed Network Based on Gambling Theory and LSTM Neural Networks",
+    "authors": ["S Duong", "T Nguyen", "NT Hoang", "V Tong", "HA Tran", "G Nguyen", "A Mellouk", "et al."],
+    "venue": "GLOBECOM 2023-2023 IEEE Global Communications Conference, 413-418",
+    "year": 2023,
+    "paperUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=GDpnurQAAAAJ&sortby=pubdate&citation_for_view=GDpnurQAAAAJ:Tyk-4Ss8FVUC"
+  },
+  {
+    "title": "Multi service-oriented routing mechanism for heterogeneous multi-domain software-defined networking",
+    "authors": ["T Nguyen", "H Ngo", "T Pham", "NT Hoang", "V Tong", "HA Tran", "G Nguyen", "et al."],
+    "venue": "GLOBECOM 2023-2023 IEEE Global Communications Conference, 1271-1276",
+    "year": 2023,
+    "paperUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=GDpnurQAAAAJ&sortby=pubdate&citation_for_view=GDpnurQAAAAJ:zYLM7Y9cAGgC"
+  },
+  {
+    "title": "Phn loại luồng dữ liệu dựa trn học chuyển giao đa nguồn trong hệ thống mạng SDN phn tn",
+    "authors": ["HN Thang", "NT Le Tuan", "DC Son", "T Van Van", "TH Anh"],
+    "venue": "Journal of Science and Technology on Information security, 59-60",
+    "year": 2023,
+    "paperUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=GDpnurQAAAAJ&sortby=pubdate&citation_for_view=GDpnurQAAAAJ:2osOgNQ5qMEC"
+  },
+  {
+    "title": "Enhancing encrypted traffic classification with deep adaptation networks",
+    "authors": ["C Dao", "V Tong", "NT Hoang", "HA Tran", "TX Tran"],
+    "venue": "2023 IEEE 48th Conference on Local Computer Networks (LCN), 1-4",
+    "year": 2023,
+    "paperUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=GDpnurQAAAAJ&sortby=pubdate&citation_for_view=GDpnurQAAAAJ:9yKSN-GCB0IC"
+  },
+  {
+    "title": "Lstm-based server and route selection in distributed and heterogeneous sdn network",
+    "authors": ["NT Hoang", "V Tong", "HA Tran", "CS Duong", "TLT Nguyen"],
+    "venue": "Journal of Computer Science and Cybernetics 39 (1), 79-99",
+    "year": 2023,
+    "paperUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=GDpnurQAAAAJ&sortby=pubdate&citation_for_view=GDpnurQAAAAJ:d1gkVwhDpl0C"
   }
 ]
