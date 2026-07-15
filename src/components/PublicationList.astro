@@ -20,19 +20,23 @@ const years = groups ? Object.keys(groups).sort((a, b) => Number(b) - Number(a))
         <h3>{year}</h3>
         <ul class="publication-list">
           {groups[year].map((publication) => (
-            <li>
-              <strong>{publication.title}</strong>
-              <p>{publication.authors.join(", ")}</p>
-              <p>{publication.venue}</p>
+            <li class="publication-item">
+              <div class="publication-meta-row">
+                <p class="publication-venue">{publication.venue}</p>
+                <div class="link-row">
+                  {publication.paperUrl && <a href={publication.paperUrl}>Scholar</a>}
+                  {publication.codeUrl && <a href={publication.codeUrl}>Code</a>}
+                </div>
+              </div>
+              <strong class="publication-title">
+                {publication.paperUrl ? <a href={publication.paperUrl}>{publication.title}</a> : publication.title}
+              </strong>
+              <p class="publication-authors">{publication.authors.join(", ")}</p>
               {publication.topicTags && (
                 <ul class="tag-list">
                   {publication.topicTags.map((tag) => <li>{tag}</li>)}
                 </ul>
               )}
-              <div class="link-row">
-                {publication.paperUrl && <a href={publication.paperUrl}>Paper</a>}
-                {publication.codeUrl && <a href={publication.codeUrl}>Code</a>}
-              </div>
             </li>
           ))}
         </ul>
@@ -42,10 +46,19 @@ const years = groups ? Object.keys(groups).sort((a, b) => Number(b) - Number(a))
 ) : (
   <ul class="publication-list">
     {publications.map((publication) => (
-      <li>
-        <strong>{publication.title}</strong>
-        {!compact && <p>{publication.authors.join(", ")}</p>}
-        <p>{publication.venue} · {publication.year}</p>
+      <li class="publication-item">
+        <div class="publication-meta-row">
+          <p class="publication-venue">{publication.venue} · {publication.year}</p>
+          {publication.paperUrl && (
+            <div class="link-row">
+              <a href={publication.paperUrl}>Scholar</a>
+            </div>
+          )}
+        </div>
+        <strong class="publication-title">
+          {publication.paperUrl ? <a href={publication.paperUrl}>{publication.title}</a> : publication.title}
+        </strong>
+        {!compact && <p class="publication-authors">{publication.authors.join(", ")}</p>}
         {publication.topicTags && (
           <ul class="tag-list">
             {publication.topicTags.map((tag) => <li>{tag}</li>)}

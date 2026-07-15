@@ -346,18 +346,61 @@ h3 {
   gap: 1rem;
 }
 
-.publication-list li + li {
-  padding-top: 1rem;
-  border-top: 1px solid var(--border);
+.publication-item {
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--border);
+  border-radius: calc(var(--radius) - 4px);
+  background: rgba(10, 18, 32, 0.72);
+}
+
+.publication-meta-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.7rem;
+}
+
+.publication-title {
+  display: block;
+  font-size: 1.06rem;
+  line-height: 1.4;
+}
+
+.publication-title a {
+  color: var(--text);
+}
+
+.publication-title a:hover {
+  color: var(--accent);
+}
+
+.publication-authors {
+  margin: 0.45rem 0 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.publication-venue {
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.28rem 0.62rem;
+  border-radius: 999px;
+  background: rgba(91, 214, 255, 0.1);
+  color: #bcefff;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
 }
 
 .publication-groups {
   display: grid;
-  gap: 1rem;
+  gap: 1.4rem;
 }
 
 .publication-year h3 {
-  margin-bottom: 1rem;
+  margin-bottom: 0.85rem;
 }
 
 .person-role {
