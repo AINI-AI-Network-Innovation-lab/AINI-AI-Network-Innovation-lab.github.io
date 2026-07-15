@@ -2,52 +2,23 @@
 import { getCollection } from "astro:content";
 import CtaBlock from "../components/CtaBlock.astro";
 import Hero from "../components/Hero.astro";
-import ProjectCard from "../components/ProjectCard.astro";
 import ResearchCard from "../components/ResearchCard.astro";
 import SectionHeader from "../components/SectionHeader.astro";
 import site from "../data/site.json";
 import BaseLayout from "../layouts/BaseLayout.astro";
-import {
-  byOrder,
-  selectFeaturedProjects,
-} from "../lib/content";
-import type { Person } from "../types";
+import { byOrder } from "../lib/content";
 
 const research = byOrder(await getCollection("research")).slice(0, 3);
-const projects = selectFeaturedProjects(await getCollection("projects"), 3);
 ---
 <BaseLayout title="Home" description={site.description}>
   <Hero />
 
   <section class="section">
     <div class="container">
-      <SectionHeader
-        eyebrow="Research Areas"
-        title="Research areas"
-      />
+      <SectionHeader title="Research areas" />
       <div class="card-grid three-up">
         {research.map((entry) => (
           <ResearchCard title={entry.data.title} summary={entry.data.summary} tags={entry.data.tags} compact />
-        ))}
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <SectionHeader
-        eyebrow="Featured Projects"
-        title="Featured projects"
-      />
-      <div class="card-grid three-up">
-        {projects.map((entry) => (
-          <ProjectCard
-            title={entry.data.title}
-            summary={entry.data.summary}
-            tags={entry.data.tags}
-            links={entry.data.links}
-            compact
-          />
         ))}
       </div>
     </div>
