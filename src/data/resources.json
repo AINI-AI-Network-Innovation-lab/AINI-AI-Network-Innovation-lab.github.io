@@ -5,5 +5,12 @@
     "summary": "Public repositories and research code.",
     "href": "https://github.com/AINI-AI-Network-Innovation-lab",
     "order": 1
+  },
+  {
+    "title": "New Member Onboarding",
+    "category": "Onboarding",
+    "summary": "A starter guide for new lab members covering setup, expectations, and how to get oriented with AINI Lab workflows.",
+    "href": "https://github.com/AINI-AI-Network-Innovation-lab/AINI-For-newbies",
+    "order": 2
   }
 ]
