@@ -1,14 +1,14 @@
 :root {
-  --bg: #F7F5F0;
-  --surface: #FFFFFF;
-  --surface-strong: #FFFFFF;
-  --text: #1F2937;
-  --muted: #6B7280;
-  --border: #E5E0D8;
+  --bg: #1E1C1A;
+  --surface: #2A2725;
+  --surface-strong: #33302D;
+  --text: #E8E5E0;
+  --muted: #9C978E;
+  --border: #3D3935;
   --primary: #2477BB;
   --accent: #B45309;
-  --accent-soft: rgba(180, 83, 9, 0.08);
-  --shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  --accent-soft: rgba(180, 83, 9, 0.15);
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   --radius: 12px;
   --container: 1120px;
 }
@@ -368,7 +368,7 @@ h3 {
   align-items: center;
   padding: 0.28rem 0.62rem;
   border-radius: 999px;
-  background: rgba(36, 119, 187, 0.08);
+  background: rgba(36, 119, 187, 0.15);
   color: var(--primary);
   font-size: 0.78rem;
   font-weight: 700;
